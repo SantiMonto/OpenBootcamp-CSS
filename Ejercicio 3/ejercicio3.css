@@ -1,0 +1,13 @@
+
+.texto p::before{
+    content: "Pasa por encima";
+}
+
+.texto:hover{
+    color:white;
+    background-color: green;
+}
+
+.texto:active p::before{
+    content: "¡Hecho!";
+}
