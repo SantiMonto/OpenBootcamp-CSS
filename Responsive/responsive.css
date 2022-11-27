@@ -1,0 +1,31 @@
+.contendedor{
+    display: flex;
+}
+
+.barra-lateral{
+    display: flex;
+    flex-direction: column;
+    background-color: aqua;
+    /* width: 150px;
+    height: 100vh; */
+    flex-grow: 0.5;
+}
+
+.principal{
+    display: flex;
+    background-color: beige;
+    flex-grow: 4;
+}
+
+@media screen and (max-width: 640px){
+    .contendedor{
+        flex-direction: column-reverse;
+    }
+    .barra-lateral{
+        flex-direction:row;
+        align-items: end;
+    }
+    .principal{
+        height: 90vh;
+    }
+}
